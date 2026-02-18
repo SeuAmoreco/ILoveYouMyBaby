@@ -1,0 +1,84 @@
+body {
+    background-color: #F5F5F5; /* Fundo cinza claro */
+    color: #2C2C2C; /* Texto primário em cinza escuro */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #FFFFFF; /* Componentes em branco puro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(165, 42, 42, 0.5); /* Sombra marrom avermelhada suave */
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #800000; /* Cor para o nome */
+    margin: 10px 0;
+}
+
+.countdown-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.countdown-item {
+    background-color: #FFFFFF; /* Contêineres em branco puro */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.25em;
+}
+
+.countdown-item span {
+    font-size: 1.5em;
+    color: #2C2C2C; /* Números em cinza escuro */
+}
+
+.quote {
+    font-size: 1.5em;
+    color: #800000; /* Cor para a frase */
+    margin-bottom: 20px;
+    font-weight: bold; /* Destacar a frase romântica */
+}
+
+iframe {
+    border: none;
+    margin-top: 20px;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    .countdown-item {
+        font-size: 1em;
+    }
+    .countdown-item span {
+        font-size: 1.25em;
+    }
+    .quote {
+        font-size: 1.25em;
+    }
+}
